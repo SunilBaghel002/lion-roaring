@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    position: relative;
+}
+.container h2{
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+.image{
+    width: 540px;
+    height: 360px;
+    background-image: url("https://img.freepik.com/free-photo/portrait-lion-ai-generated_268835-4278.jpg");
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.5s linear;
+}
+.image:hover{
+    background-image: url("https://t4.ftcdn.net/jpg/05/58/91/89/360_F_558918922_W4D1DKSw0HBTcBVxiDAAqS5jNEb9Ll87.jpg");
+}
