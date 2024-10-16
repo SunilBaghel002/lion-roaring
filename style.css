@@ -5,28 +5,52 @@
 }
 body{
     background-color: black;
-}
-.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+}
+.container{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
     position: relative;
 }
 .container h2{
     color: white;
     position: relative;
     z-index: 3;
+    margin-left: 180px;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(30, end);
+    overflow: hidden;
+    white-space: nowrap;
+    display: none;
 }
 .image{
     width: 540px;
     height: 360px;
+    margin-top: 0px;
     background-image: url("https://img.freepik.com/free-photo/portrait-lion-ai-generated_268835-4278.jpg");
     background-size: contain;
     position: absolute;
     z-index: 1;
     transition: all 0.5s linear;
 }
+.color{
+    background-color: rgb(8, 8, 8);
+}
 .image:hover{
     background-image: url("https://t4.ftcdn.net/jpg/05/58/91/89/360_F_558918922_W4D1DKSw0HBTcBVxiDAAqS5jNEb9Ll87.jpg");
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
